@@ -1,0 +1,146 @@
+ /* The navigation bar */
+ .navbar {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: right;
+    display: block;
+    color: #5A5A5A;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+} 
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #525A65;
+    overflow-x: hidden;
+    padding-top: 20px;
+    
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    color: #f2f2f2;
+    display: block;
+}
+
+.sidenav a:hover {
+    
+    background: #5C6879;
+}
+
+.main {
+
+    margin-left: 310px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 60px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+i{
+   color: #f2f2f2;
+   padding-right: 20px;
+}
+
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .rad-info-box i {
+    opacity: .3;
+  }
+}
+
+
+.rad-info-box {
+  margin-bottom: 16px;
+  box-shadow: 1px 1px 2px 0 #CCCCCC;
+  padding: 20px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  background: white !important;
+}
+
+.rad-info-box i {
+  display: block;
+  background-clip: padding-box;
+  margin-right: 15px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 1.8em;
+  position: absolute;
+  margin-top: 15px;
+}
+
+.rad-info-box .value {
+  display: block;
+  position: relative;
+  color: #515d6e;
+  text-align: right;
+  z-index: 10;
+}
+.rad-info-box .heading {
+    display: block;
+    position: relative;
+    color: #515d6e;
+    text-align: left;
+    z-index: 10;
+    
+  }
+
+.rad-info-box .heading {
+  font-size: 20px;
+  font-weight: 300;
+  border-bottom: 3px solid #83BEDF;
+  
+  
+  
+}
+
+.rad-info-box .value {
+  font-size: 2.1em;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+
+

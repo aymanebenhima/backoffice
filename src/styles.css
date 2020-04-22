@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import '~bootstrap/dist/css/bootstrap.css';
+
+
+body{
+    background-color: #F7F8FA;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
